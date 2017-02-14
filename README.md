@@ -6,7 +6,8 @@ _Mouse / human control of cross-contaminations in single-cell ATAC-seq on Fluidi
 The purpose of this repository is to announce, document, and track issues
 and contributions related to a single-cell ATAC-seq dataset that we created
 to measure and control cross-contaminations.  Please feedback with the issue
-tracker here on GitHub, or with the Biostars forum.
+tracker here on GitHub, or with the [Biostars](https://www.biostars.org/p/236583/)
+forum.
 
 To rule out or quantify the amount of cross-contamination in single-cell
 ATAC-seq libraries prepared on the C1 platform with the protocol available
