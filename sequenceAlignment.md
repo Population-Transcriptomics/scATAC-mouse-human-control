@@ -64,7 +64,10 @@ In brief:
    unmapped (0x8).  This was unfortunately not corrected by `samtools fixmate`.
 
  - The color field is set to green for the positive strand and violet for the
-   negative one.
+   negative one.  (Cosmetic, to match default colors in the
+   [ZENBU](http://fantom.gsc.riken.jp/zenbu/) browser;
+   actually, sincce recently is not strictly necessary as ZENBU can now
+   override the color field.)
 
  - The pairs are finally re-sorted by coordinate and saved on the disk.
 
