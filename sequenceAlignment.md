@@ -48,8 +48,8 @@ In brief:
  - The reads are aligned using `bwa aln` and `bwa sampe` with standard
    parameters, after trimming them to 30 bases for Read1 and 29 bases for
    Read2.  This is the read length on the MiSeq runs that we produced, and I want
-   to minimise the technical differences between our data and the one from the
-   original paper.
+   to minimise the technical differences when comparing our data with other
+   datasets such as the ones from the original paper.
 
  - The output is converted to BAM format and sorted; a copy is kept in the
    filesystems, while the data flows in the next steps through Unix pipes.
