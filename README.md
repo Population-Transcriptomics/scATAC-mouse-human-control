@@ -81,3 +81,11 @@ Microscope pictures of the capture chambers
 
  - Bulk download MPGs:
    http://single-cell.clst.riken.jp/files/ATAC-human-mouse-control/mpg_files/mpg_bulkdownload/ 
+
+
+Data analysis
+-------------
+
+Our data analysis is ongoing.  Here is a description of our [alignment
+strategy](sequenceAlignment.md).  Comments and suggestions are welcome (ideally
+via [Biostars](https://www.biostars.org/)).
