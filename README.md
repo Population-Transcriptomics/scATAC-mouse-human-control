@@ -78,9 +78,18 @@ Microscope pictures of the capture chambers
 
  - Bulk download JPEGs:
    http://single-cell.clst.riken.jp/files/ATAC-human-mouse-control/All_runs_JPEG_cell_images/ 
+       
+       f82894834070834225ab235be65514e4  1772-123-148.tar.gz
+       8eaebae1ed41622d669b7832188aa39a  1772-123-155.tar.gz
+       12fe7663bda3afb5d4b1f8fcdfd0a222  1772-123-158.tar.gz
 
  - Bulk download MPGs:
    http://single-cell.clst.riken.jp/files/ATAC-human-mouse-control/mpg_files/mpg_bulkdownload/ 
+       
+       b55fd18aede5d53ff9758dfcf7095378  1772-123-148_mpg.tar.gz
+       5f532b9c2a59da5388a55155dbc6ddbe  1772-123-155_mpg.tar.gz
+       1ced7ef23cae818f659986c76f0a19d6  1772-123-158_mpg.tar.gz
+
 
 
 Data analysis
