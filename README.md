@@ -46,7 +46,9 @@ Experiment 2: FACS-sorted mouse and human cells with / without washing
 ----------------------------------------------------------------------
 
 In the second experiment, we FACS-sorted the cells before loading, thus adding
-one potential source of stress and damage.  We loaded the cells with or without
+one potential source of stress and damage.  Nevertheless, we used gentle FACS
+conditions (nozzle size of 100 μm), to reflect the actual settings that would be
+recommended when working with fragile cells.  We loaded the cells with or without
 washing them after FACS-sorting.  48 samples (single cells, empty chambers,
 doublets) from each C1 run were multiplexed in one MiSeq run.
 
