@@ -72,11 +72,11 @@ Brief experimental summary:
 Microscope pictures of the capture chambers
 -------------------------------------------
 
- - Overview summary:  
-   http://single-cell.clst.riken.jp/ATAC_human_mouse_control_summary_view.php 
+ - Overview summary:
+   http://single-cell.clst.riken.jp/riken_data/ATAC_human_mouse_control_summary_view.php
 
  - JPEG and stack movies:
-   http://single-cell.clst.riken.jp/ATAC_human_mouse_control_metadata_list.php 
+   http://single-cell.clst.riken.jp/riken_data/ATAC_human_mouse_control_metadata_list.php
 
  - Bulk download JPEGs:
    http://single-cell.clst.riken.jp/files/ATAC-human-mouse-control/All_runs_JPEG_cell_images/ 
