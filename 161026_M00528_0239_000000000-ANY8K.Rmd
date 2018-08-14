@@ -5,6 +5,8 @@ output:
     keep_md: yes
     number_sections: yes
     toc: yes
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r echo=FALSE}
@@ -102,6 +104,12 @@ libs %<>% merge(alStats, by="samplename", all=TRUE)
 rm(alStats)
 ```
 
+```{r human_mouse_ratio}
+libs[libs$genome=="hg19", "h_m_ratio"] <-
+  libs[libs$genome=="mm9", "h_m_ratio"] <-
+    log(libs[libs$genome=="hg19", "proper_pairs"] /
+        libs[libs$genome=="mm9", "proper_pairs"])
+```
 ### Comparisons
 
 ```{r troubleshoot}
@@ -112,6 +120,8 @@ qplot(data = libs, genome, proper_pairs_Q20,  geom = "boxplot", color=genome) + 
 qplot(data = libs, genome, redundancy,  geom = "boxplot", color=genome) + ggtitle('Redundancy') + facet_wrap(~Group, scale="free")
 
 qplot(data = libs, genome, redundancy2,  geom = "boxplot", color=genome) + ggtitle('Redundancy (proper pairs only)') + facet_wrap(~Group, scale="free")
+
+qplot(data = libs[libs$genome=="hg19",], Group, h_m_ratio,  geom = "boxplot", color=Group) + ggtitle('log ratio human/mouse alignments') + geom_jitter() + coord_flip()
 ```
 
 Samples F09 and H02 gave very large number of aligned pairs on the mouse
@@ -167,7 +177,7 @@ boxplot(data = libs, redundancy ~ Group)
 Upload libraries on Zenbu
 -------------------------
 
-```{r}
+```
 library(zenbuWrappeR)
 
 rownames(libs) <- paste0(libs$samplename, "_", libs$genome)
