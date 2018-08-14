@@ -110,6 +110,7 @@ libs[libs$genome=="hg19", "h_m_ratio"] <-
     log(libs[libs$genome=="hg19", "proper_pairs"] /
         libs[libs$genome=="mm9", "proper_pairs"])
 ```
+
 ### Comparisons
 
 ```{r troubleshoot}
@@ -120,8 +121,6 @@ qplot(data = libs, genome, proper_pairs_Q20,  geom = "boxplot", color=genome) + 
 qplot(data = libs, genome, redundancy,  geom = "boxplot", color=genome) + ggtitle('Redundancy') + facet_wrap(~Group, scale="free")
 
 qplot(data = libs, genome, redundancy2,  geom = "boxplot", color=genome) + ggtitle('Redundancy (proper pairs only)') + facet_wrap(~Group, scale="free")
-
-qplot(data = libs[libs$genome=="hg19",], Group, h_m_ratio,  geom = "boxplot", color=Group) + ggtitle('log ratio human/mouse alignments') + geom_jitter() + coord_flip()
 ```
 
 Samples F09 and H02 gave very large number of aligned pairs on the mouse
@@ -173,6 +172,11 @@ boxplot(data = libs, proper_pairs ~ Group)
 boxplot(data = libs, redundancy ~ Group)
 ```
 
+#### Human / mouse ratio of aligned pairs.
+
+```{r human_mouse_ratio_picture}
+qplot(data = libs[libs$genome=="hg19",], Group, h_m_ratio,  geom = "boxplot", color=Group) + ggtitle('log ratio human/mouse alignments') + geom_jitter() + coord_flip()
+```
 
 Upload libraries on Zenbu
 -------------------------
